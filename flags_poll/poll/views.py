@@ -4,3 +4,6 @@ from django.shortcuts import render
 
 def indexView(request):
     return render(request, 'poll/index.html')
+
+def pollView(request):
+    return render(request, 'poll/poll.html')
