@@ -15,10 +15,14 @@ class NewVisitor(LiveServerTestCase):
         start_poll = self.browser.find_element_by_id('start_poll')
         self.assertEqual(start_poll.get_attribute('type'), 'submit')
 
-        start_poll.send_keys(Keys.ENTER)
-        question = self.browser.find_element_by_id('question')
+        start_poll.click()
 
-        self.assertIn('Name the flag`s country', question.text)
+        answers = self.browser.find_elements_by_id('answer')
+        self.assertEquals(len(answers), 4)
+
+        flag = self.browser.find_element_by_id('flag_image')
+        # test image loaded, how?
+        # self.assertIn('Flag not found', flag.get_attribute('textContent'))
 
 
     def tearDown(self):
