@@ -19,8 +19,8 @@ def pollView(request):
     )
 
 def get_four_random_countries():
-    # returns list[4] of unique random poll.models.Country objects
+    '''returns list[4] of unique random poll.models.Country objects'''
     count = Country.objects.count()
-    ids = list(range(count))
+    ids = list(range(1, count))  # id start with 1
     random.shuffle(ids)
     return list(Country.objects.filter(id__in = ids[:4]))

@@ -9,7 +9,7 @@ from django.db import models
 
 
 class Country(models.Model):
-    enabled = models.PositiveIntegerField()
+    enabled = models.PositiveIntegerField(default = True)
     code3l = models.CharField(unique=True, max_length=3)
     code2l = models.CharField(unique=True, max_length=2)
     name = models.CharField(unique=True, max_length=64)
