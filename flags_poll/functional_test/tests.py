@@ -1,11 +1,12 @@
 from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
-from django.test import LiveServerTestCase
+from django.contrib.staticfiles.testing import StaticLiveServerTestCase
 import time
 
+from poll.models import Country
 from poll.tests.test_base import create_some_countries
 
-class NewVisitor(LiveServerTestCase):
+class NewVisitor(StaticLiveServerTestCase):
     def setUp(self):
         self.browser = webdriver.Chrome('C:\\webdrivers\\chromedriver.exe')
         create_some_countries()
@@ -20,12 +21,32 @@ class NewVisitor(LiveServerTestCase):
 
         start_poll.click()
 
-        answers = self.browser.find_elements_by_id('answer')
+        # Answers right four times
+        num_right_answers = 4
+        for i in range(num_right_answers):
+            answers = self.browser.find_elements_by_name('answer')
+            self.assertEquals(len(answers), 4)
+
+            flag = self.browser.find_element_by_id('flag_image')
+            flag_src = flag.get_attribute('src').split('/')[-1]
+            country = Country.objects.get(flag_128 = flag_src)
+            self.browser.find_element_by_css_selector(f'input[value="{country.name}"]').click()
+
+        # answers wrong
+        answers = self.browser.find_elements_by_name('answer')
         self.assertEquals(len(answers), 4)
 
         flag = self.browser.find_element_by_id('flag_image')
-        # test image loaded, how?
-        # self.assertIn('Flag not found', flag.get_attribute('textContent'))
+        flag_src = flag.get_attribute('src').split('/')[-1]
+        country = Country.objects.get(flag_128 = flag_src)
+
+        # clicks wrong answer
+        if answers[0].get_attribute('value') == country.name:
+            answers[1].click()
+        else:
+            answers[0].click()
+
+        self.assertContains(self.browser.find_element_by_id('result'), 'Your score: 4')
 
 
     def tearDown(self):

@@ -1,4 +1,5 @@
 from django.test import TestCase
+from django.contrib.sessions.models import Session
 
 from poll.models import Country
 from poll.views import get_four_random_countries
@@ -29,6 +30,32 @@ class TestPollView(TestCase):
     def test_image_loaded(self):
         response = self.client.get('/poll/')
         self.assertContains(response, response.context['img'])
+
+# POST
+    def test_right_answer_saves_score(self):
+        response = self.client.get('/poll/')
+        session = Session.objects.first().get_decoded()
+
+        self.assertEqual(Session.objects.count(), 1)
+        self.assertEqual(session['score'], 0)
+
+        country = Country.objects.get(id = session['answer_id'])
+        self.client.post('/poll/', data = {'answer' : country.name})
+        session = Session.objects.first().get_decoded()
+
+        self.assertEqual(session['score'], 1)
+
+    def test_wrong_answer_redirects(self):
+        response = self.client.get('/poll/')
+        response = self.client.post('/poll/', data = {'answer' : 'wrong answer'})
+        self.assertRedirects(response, '/poll/result/')
+
+    def test_wrong_answer_not_increase_score(self):
+        response = self.client.get('/poll/')
+        response = self.client.post('/poll/', data = {'answer' : 'wrong answer'})
+        session = Session.objects.first().get_decoded()
+
+        self.assertEqual(session['score'], 0)
 
 
 class TestFourRandomContries(TestCase):
