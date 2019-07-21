@@ -3,9 +3,12 @@ from selenium.webdriver.common.keys import Keys
 from django.test import LiveServerTestCase
 import time
 
+from poll.tests.test_base import create_some_countries
+
 class NewVisitor(LiveServerTestCase):
     def setUp(self):
         self.browser = webdriver.Chrome('C:\\webdrivers\\chromedriver.exe')
+        create_some_countries()
 
     def test(self):
         self.browser.get(self.live_server_url)

@@ -1,7 +1,6 @@
 from django.test import TestCase
 
 from poll.models import Country
-from poll.views import get_four_random_countries
 
 class TestCountryModel(TestCase):
     def test_db_id(self):

@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+{% load static %}
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
@@ -7,13 +8,13 @@
   <body>
     <p id="question">Name the flag`s country</p>
     <div class="flag">
-      <img id="flag_image" src="1.jpg" alt="Flag not found">
+      <img id="flag_image" src="{% static img %}" alt="Flag not found">
     </div>
-    <form action="/poll/index.html/" method="post">
-      <input id="answer" type="button" value="1">
-      <input id="answer" type="button" value="2">
-      <input id="answer" type="button" value="3">
-      <input id="answer" type="button" value="4">
+    <form action="{% url 'poll' %}" method="post">
+      {% csrf_token %}
+      {% for item in items %}
+        <input name="answer" type="submit" value="{{item.name}}">
+      {% endfor %}
     </form>
   </body>
 </html>
