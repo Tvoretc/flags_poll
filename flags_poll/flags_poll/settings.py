@@ -25,7 +25,7 @@ SECRET_KEY = '+kt-rcp5rqya88k6m+%xor1te88j+qfo^7zabucjbp4exe&4t5'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['tvoretc.pythonanywhere.com']
 
 
 # Application definition
