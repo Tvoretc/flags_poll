@@ -75,31 +75,31 @@ WSGI_APPLICATION = 'flags_poll.wsgi.application'
 # https://docs.djangoproject.com/en/2.2/ref/settings/#databases
 
 # for server
-DATABASES = {
-    'default': {
-        # 'ENGINE': 'django.db.backends.sqlite3',
-        # 'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
-        'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'Tvoretc$Flags',
-        'USER': 'Tvoretc',
-        'PASSWORD': 'rootroot',
-        'HOST': 'Tvoretc.mysql.pythonanywhere-services.com',
-        'PORT': '',
-    }
-}
-#
 # DATABASES = {
 #     'default': {
 #         # 'ENGINE': 'django.db.backends.sqlite3',
 #         # 'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
 #         'ENGINE': 'django.db.backends.mysql',
-#         'NAME': 'Flags',
-#         'USER': 'root',
-#         'PASSWORD': '',
-#         'HOST': 'localhost',
+#         'NAME': 'Tvoretc$Flags',
+#         'USER': 'Tvoretc',
+#         'PASSWORD': 'rootroot',
+#         'HOST': 'Tvoretc.mysql.pythonanywhere-services.com',
 #         'PORT': '',
 #     }
 # }
+
+DATABASES = {
+    'default': {
+        # 'ENGINE': 'django.db.backends.sqlite3',
+        # 'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'Flags',
+        'USER': 'root',
+        'PASSWORD': '',
+        'HOST': 'localhost',
+        'PORT': '',
+    }
+}
 
 
 # Password validation
@@ -139,8 +139,8 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/2.2/howto/static-files/
 
 STATIC_URL = '/static/'
-# for server
-STATICFILES_DIRS = [
-    os.path.join(os.path.join(BASE_DIR, 'poll'), "static"),
-    '/static/',
-]
+# # for server
+# STATICFILES_DIRS = [
+#     os.path.join(os.path.join(BASE_DIR, 'poll'), "static"),
+#     '/static/',
+# ]
