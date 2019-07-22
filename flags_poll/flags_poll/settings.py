@@ -141,6 +141,6 @@ USE_TZ = True
 STATIC_URL = '/static/'
 # for server
 STATICFILES_DIRS = [
-    os.path.join((os.path.join(BASE_DIR, 'poll'), "static"),
+    os.path.join(os.path.join(BASE_DIR, 'poll'), "static"),
     '/static/',
 ]
