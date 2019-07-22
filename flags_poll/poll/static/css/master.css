@@ -1,0 +1,10 @@
+.jumbotron{
+    height: 100vh;
+}
+.nav-item{
+  font-size: 24px;
+}
+.navbar-brand{
+  font-size: 28px;
+  margin-right: 5vw;
+}

@@ -14,7 +14,7 @@ class NewVisitor(StaticLiveServerTestCase):
     def test(self):
         self.browser.get(self.live_server_url)
         self.assertEqual(self.live_server_url+'/', self.browser.current_url)
-        self.assertIn('Flags Poll', self.browser.title)
+        self.assertIn('Countries Poll', self.browser.title)
 
         start_poll = self.browser.find_element_by_id('start_poll')
         self.assertEqual(start_poll.get_attribute('type'), 'submit')

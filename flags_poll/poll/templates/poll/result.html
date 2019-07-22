@@ -1,10 +1,5 @@
-<!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title></title>
-  </head>
-  <body>
+{% extends 'poll/base.html' %}
+{% block main_body %}
     <h2 id='result'>Your score: {{score}}</h2>
-  </body>
-</html>
+    <a class="btn btn-outline-primary btn-lg m-2" href="{% url 'poll' %}">Try again</a>
+{% endblock %}
