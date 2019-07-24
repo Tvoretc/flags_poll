@@ -8,3 +8,9 @@
   font-size: 28px;
   margin-right: 5vw;
 }
+#list_hr_id{
+  margin-top: 0px;
+}
+.hr{
+  background-color: black;
+}

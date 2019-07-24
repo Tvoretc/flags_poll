@@ -1,5 +1,5 @@
 from django.shortcuts import render, redirect
-from poll.models import Country
+from poll.models import Country, Region
 import random
 
 
@@ -43,3 +43,11 @@ def get_four_random_countries():
     ids = list(range(1, count))  # id start with 1
     random.shuffle(ids)
     return list(Country.objects.filter(id__in = ids[:4]))
+
+def countriesByRegionsView(request):
+    regions = list(Region.objects.all())
+    country_list = {region : list(region.country for region in region.countryregion_set.all()) for region in regions}
+    # print(country_list)
+    return render(request, 'poll/country_list.html', context = {
+        'country_list' : country_list,
+    })

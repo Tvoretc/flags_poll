@@ -1,19 +1,21 @@
 {% extends 'poll/base.html' %}
 {% load static %}
 {% block main_body %}
+  <div class="text-center">
     <h3 id="question">Name the flag`s country</h3>
     <div class="flag m-3">
       <img id="flag_image" src="{% static img %}" width="384" height="192" alt="Flag not found">
     </div>
-    <div class="container">
-      <form action="{% url 'poll' %}" method="post">
-        {% csrf_token %}
-        <h3>Choose the right country name:</h3>
-        {% for item in items %}
-          <div class="row">
-            <input class="btn btn-outline-secondary btn-lg m-2" name="answer" type="submit" value="{{item.name}}">
-          </div>
-        {% endfor %}
-      </form>
-    </div>
+  </div>
+  <div class="container">
+    <form action="{% url 'poll' %}" method="post">
+      {% csrf_token %}
+      <h3>Choose the right country name:</h3>
+      {% for item in items %}
+        <div class="row">
+          <input class="btn btn-outline-secondary btn-lg m-2" name="answer" type="submit" value="{{item.name}}">
+        </div>
+      {% endfor %}
+    </form>
+  </div>
 {% endblock %}
