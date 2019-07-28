@@ -45,8 +45,13 @@ class NewVisitor(StaticLiveServerTestCase):
             answers[1].click()
         else:
             answers[0].click()
-
-        self.assertContains(self.browser.find_element_by_id('result'), 'Your score: 4')
+        time.sleep(10)
+        self.assertIn('Your score: 4', self.browser.find_element_by_id('result').text)
+        email_input = self.browser.find_element_by_id("email_input_id")
+        email = 'a@gmail.com'
+        email_input.send_keys(email).send_keys(keys.ENTER)
+        mail = mail.outbox[0]
+        self.assertEqual(email, mail.to)
 
 
     def tearDown(self):

@@ -1,8 +1,9 @@
 from django.shortcuts import render, redirect
-from poll.models import Country, Region
+from django.views.generic.list import ListView
 import random
 
-
+from poll.models import Country, Region
+from poll.forms import ScoreRecordForm
 # Create your views here.
 
 def indexView(request):
@@ -33,9 +34,21 @@ def pollView(request):
     )
 
 def pollResultView(request):
+    if request.method == 'POST':
+        form = ScoreRecordForm(data = request.POST['data'])
+        if form.is_valid():
+            email = form.cleaned_data['email']
+            score = request.session.get('score', None)
+        if score == None:
+            messages.warning(request, 'Sorry, but we cant find your score. Did you actually had poll?')
+        else:
+            request.session.clear()
+            form.save(score)
+            send_mail('Your score in Country poll', f'Your score was {score}. Get even better next time!', 'noreply@countrysite', [email])
+            message.success('We got you an email with your score. Keep up!')
+        return redirect('poll/')
     score = request.session.get('score', 0)
-    request.session.clear()
-    return render(request, 'poll/result.html', {'score' : score})
+    return render(request, 'poll/result.html', {'score' : score, 'form' : ScoreRecordForm()})
 
 def get_four_random_countries():
     '''returns list[4] of unique random poll.models.Country objects'''
@@ -48,6 +61,10 @@ def countriesByRegionsView(request):
     regions = list(Region.objects.all())
     country_list = {region : list(region.country for region in region.countryregion_set.all()) for region in regions}
     # print(country_list)
-    return render(request, 'poll/country_list.html', context = {
+    return render(request, 'poll/country_by_region.html', context = {
         'country_list' : country_list,
     })
+
+class CountryListView(ListView):
+    model = Country
+    paginate = 20

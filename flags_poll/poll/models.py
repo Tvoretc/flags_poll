@@ -64,3 +64,12 @@ class CountryRegion(models.Model):
     class Meta:
         db_table = 'country_region'
         unique_together = (('country', 'region'),)
+
+
+class ScoreRecord(models.Model):
+    email = models.EmailField()
+    score = models.PositiveIntegerField()
+    date = models.DateField(auto_now = True)
+
+    def __str__(self):
+        return f"{score}: {email}({date})"

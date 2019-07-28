@@ -76,3 +76,11 @@ class TestFourRandomContries(TestCase):
             for i in range(4):
                 for j in range(i+1,4):
                     self.assertNotEqual(items[i], items[j])
+
+class TestCountriesByRegions(TestCase):
+    def setUp(self):
+        create_some_countries()
+
+    def test_template_used(self):
+        response = self.client.get('/poll/list')
+        self.assertTemplateUsed(response, 'poll/country_by_region.html')
