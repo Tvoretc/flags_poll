@@ -45,7 +45,7 @@ class NewVisitor(StaticLiveServerTestCase):
             answers[1].click()
         else:
             answers[0].click()
-        time.sleep(10)
+        # time.sleep(10)
         self.assertIn('Your score: 4', self.browser.find_element_by_id('result').text)
         email_input = self.browser.find_element_by_id("email_input_id")
         email = 'a@gmail.com'

@@ -82,5 +82,5 @@ class TestCountriesByRegions(TestCase):
         create_some_countries()
 
     def test_template_used(self):
-        response = self.client.get('/poll/list')
+        response = self.client.get('/poll/list/')
         self.assertTemplateUsed(response, 'poll/country_by_region.html')

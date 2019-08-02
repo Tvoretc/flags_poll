@@ -1,5 +1,7 @@
 from django.shortcuts import render, redirect
 from django.views.generic.list import ListView
+from django.core.mail import send_mail
+from django.contrib import messages
 import random
 
 from poll.models import Country, Region
@@ -19,7 +21,7 @@ def pollView(request):
             return redirect('/poll/result/')
     else:
         request.session['score'] = 0
-
+    # print('\n\npoll')
     items = get_four_random_countries()
     choice = random.randrange(4)
     request.session['answer_id'] = items[choice].id
@@ -35,7 +37,7 @@ def pollView(request):
 
 def pollResultView(request):
     if request.method == 'POST':
-        form = ScoreRecordForm(data = request.POST['data'])
+        form = ScoreRecordForm(data = {'email':request.POST['email']})
         if form.is_valid():
             email = form.cleaned_data['email']
             score = request.session.get('score', None)
@@ -45,8 +47,8 @@ def pollResultView(request):
             request.session.clear()
             form.save(score)
             send_mail('Your score in Country poll', f'Your score was {score}. Get even better next time!', 'noreply@countrysite', [email])
-            message.success('We got you an email with your score. Keep up!')
-        return redirect('poll/')
+            messages.success(request, 'We got you an email with your score. Keep up!')
+        return redirect('/poll/')
     score = request.session.get('score', 0)
     return render(request, 'poll/result.html', {'score' : score, 'form' : ScoreRecordForm()})
 
