@@ -4,7 +4,7 @@ from django.core.mail import send_mail
 from django.contrib import messages
 import random
 
-from poll.models import Country, Region
+from poll.models import Country, Region, ScoreRecord
 from poll.forms import ScoreRecordForm
 # Create your views here.
 
@@ -35,22 +35,35 @@ def pollView(request):
         }
     )
 
+RESULT_WARNING_MESSAGE_NO_SCORE='Sorry, but we cant find your score. Did you actually had a poll?'
+RESULT_WARNING_MESSAGE_BAD_EMAIL='Invlid email'
+RESULT_SUCCESS_MESSAGE_EMAIL_SENT='We got you an email with your score. Keep up!'
+RESULT_MESSAGE_SCORE = 'Your score: '
+
 def pollResultView(request):
-    if request.method == 'POST':
-        form = ScoreRecordForm(data = {'email':request.POST['email']})
+    score = request.session.get('score', None)
+    if score == None:
+        messages.warning(request, RESULT_WARNING_MESSAGE_NO_SCORE)
+    elif request.method == 'POST':
+        form = ScoreRecordForm(data=request.POST)
+        print(request.POST)
         if form.is_valid():
+            print('form valid')
             email = form.cleaned_data['email']
-            score = request.session.get('score', None)
-        if score == None:
-            messages.warning(request, 'Sorry, but we cant find your score. Did you actually had poll?')
-        else:
             request.session.clear()
-            form.save(score)
-            send_mail('Your score in Country poll', f'Your score was {score}. Get even better next time!', 'noreply@countrysite', [email])
-            messages.success(request, 'We got you an email with your score. Keep up!')
-        return redirect('/poll/')
-    score = request.session.get('score', 0)
-    return render(request, 'poll/result.html', {'score' : score, 'form' : ScoreRecordForm()})
+            ScoreRecord.objects.create(email=email, score=score)
+            # send_mail('Your score in Country poll', f'Your score was {score}. Get even better next time!', 'noreply@countrysite', [email])
+            print('email')
+            messages.success(request, RESULT_SUCCESS_MESSAGE_EMAIL_SENT)
+            print('success')
+
+        # if form invalid
+        else:
+            messages.warning(request, RESULT_WARNING_MESSAGE_BAD_EMAIL)
+    # if request.method == get
+    else:
+        messages.success(request, RESULT_MESSAGE_SCORE+str(score))
+    return render(request, 'poll/result.html', {'form' : ScoreRecordForm()})
 
 def get_four_random_countries():
     '''returns list[4] of unique random poll.models.Country objects'''

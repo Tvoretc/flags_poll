@@ -72,4 +72,4 @@ class ScoreRecord(models.Model):
     date = models.DateField(auto_now = True)
 
     def __str__(self):
-        return f"{score}: {email}({date})"
+        return f"{self.score}: {self.email}({self.date})"

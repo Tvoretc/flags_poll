@@ -1,10 +1,13 @@
 from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
+
 from django.contrib.staticfiles.testing import StaticLiveServerTestCase
-import time
+from django.core import mail
 
 from poll.models import Country
 from poll.tests.test_base import create_some_countries
+
+import time
 
 class NewVisitor(StaticLiveServerTestCase):
     def setUp(self):
@@ -47,11 +50,12 @@ class NewVisitor(StaticLiveServerTestCase):
             answers[0].click()
         # time.sleep(10)
         self.assertIn('Your score: 4', self.browser.find_element_by_id('result').text)
-        email_input = self.browser.find_element_by_id("email_input_id")
+        email_input = self.browser.find_element_by_id("id_email_input")
         email = 'a@gmail.com'
-        email_input.send_keys(email).send_keys(keys.ENTER)
-        mail = mail.outbox[0]
-        self.assertEqual(email, mail.to)
+        email_input.send_keys(email)
+        email_input.send_keys(Keys.ENTER)
+        sent_mail = mail.outbox[0]
+        self.assertEqual(email, sent_mail.to)
 
 
     def tearDown(self):
