@@ -11,7 +11,7 @@
     <form action="{% url 'result' %}" method="post">
       <p>Enter your email to get your score:</p>
       {{ form.as_p }}
-      <input id="id_email_input" type="submit" value="Send mail">
+      <input id="id_email_submit" type="submit" value="Send mail">
       {% csrf_token %}
     </form>
 {% endblock %}

@@ -14,7 +14,7 @@ class NewVisitor(StaticLiveServerTestCase):
         self.browser = webdriver.Chrome('C:\\webdrivers\\chromedriver.exe')
         create_some_countries()
 
-    def test(self):
+    def test_poll(self):
         self.browser.get(self.live_server_url)
         self.assertEqual(self.live_server_url+'/', self.browser.current_url)
         self.assertIn('Countries Poll', self.browser.title)
@@ -33,7 +33,9 @@ class NewVisitor(StaticLiveServerTestCase):
             flag = self.browser.find_element_by_id('flag_image')
             flag_src = flag.get_attribute('src').split('/')[-1]
             country = Country.objects.get(flag_128 = flag_src)
-            self.browser.find_element_by_css_selector(f'input[value="{country.name}"]').click()
+            self.browser.find_element_by_css_selector(
+                f'input[value="{country.name}"]'
+            ).click()
 
         # answers wrong
         answers = self.browser.find_elements_by_name('answer')
@@ -48,14 +50,17 @@ class NewVisitor(StaticLiveServerTestCase):
             answers[1].click()
         else:
             answers[0].click()
-        # time.sleep(10)
-        self.assertIn('Your score: 4', self.browser.find_element_by_id('result').text)
-        email_input = self.browser.find_element_by_id("id_email_input")
+        self.assertIn('Your score: 4',
+            self.browser.find_element_by_css_selector('.success').text)
+
+        email_input = self.browser.find_element_by_id("id_email")
         email = 'a@gmail.com'
         email_input.send_keys(email)
         email_input.send_keys(Keys.ENTER)
+        
+        self.assertEqual(len(mail.outbox), 1)
         sent_mail = mail.outbox[0]
-        self.assertEqual(email, sent_mail.to)
+        self.assertEqual([email], sent_mail.to)
 
 
     def tearDown(self):

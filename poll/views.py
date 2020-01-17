@@ -46,16 +46,12 @@ def pollResultView(request):
         messages.warning(request, RESULT_WARNING_MESSAGE_NO_SCORE)
     elif request.method == 'POST':
         form = ScoreRecordForm(data=request.POST)
-        print(request.POST)
         if form.is_valid():
-            print('form valid')
             email = form.cleaned_data['email']
             request.session.clear()
             ScoreRecord.objects.create(email=email, score=score)
-            # send_mail('Your score in Country poll', f'Your score was {score}. Get even better next time!', 'noreply@countrysite', [email])
-            print('email')
+            send_mail('Your score in Country poll', f'Your score was {score}. Get even better next time!', 'noreply@countrysite', [email])
             messages.success(request, RESULT_SUCCESS_MESSAGE_EMAIL_SENT)
-            print('success')
 
         # if form invalid
         else:

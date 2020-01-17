@@ -11,6 +11,10 @@ class ScoreRecordFormTest(TestCase):
         form = ScoreRecordForm(data={'email':'123'})
         self.assertFalse(form.is_valid())
 
+    def test_form_cant_be_blank(self):
+        form = ScoreRecordForm()
+        self.assertFalse(form.is_valid())
+
     def test_form_valid_when_email_given(self):
         form = ScoreRecordForm(data={'email':'a@gmail.com'})
         self.assertTrue(form.is_valid())
