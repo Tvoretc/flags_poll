@@ -8,7 +8,7 @@
     </div>
   </div>
   <div class="container">
-    <form action="{% url 'poll' %}" method="post">
+    <form action="{% url 'poll:poll' %}" method="post">
       {% csrf_token %}
       <h3>Choose the right country name:</h3>
       {% for item in items %}

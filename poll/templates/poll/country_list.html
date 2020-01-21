@@ -3,7 +3,7 @@
 {% block main_body %}
   {% for item in object_list %}
     {% with 'poll/flags/'|add:item.flag_32 as img %}
-      <p><img src="{% static img %}" alt=""> {{item.name}}</p>
+      <p><img src="{% static img %}" alt=""> <a href="{{ item.get_absolute_url }}">{{item.name}}</a> </p>
     {% endwith %}
   {% endfor %}
 {% endblock %}

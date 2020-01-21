@@ -1,0 +1,8 @@
+{% extends 'poll/base.html' %}
+{% load static %}
+{% block main_body %}
+  {% with 'poll/flags/'|add:item.flag_128 as img %}
+    <p><img src="{% static img %}" alt=""><h2>{{ item.name_official }} [{{ item.latitude|floatformat:2 }}, {{ item.longitude|floatformat:2 }}]</h2></p>
+    <p>some info about country..</p>
+  {% endwith %}
+{% endblock %}

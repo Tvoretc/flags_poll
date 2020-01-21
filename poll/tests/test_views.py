@@ -16,6 +16,21 @@ class TestIndexView(TestCase):
         self.assertTemplateUsed(response, 'poll/index.html')
 
 
+class TestCountryView(TestCase):
+    def setUp(self):
+        create_some_countries()
+        self.test_countries = Country.objects.filter(id__in = range(3))
+
+    def test_view_returns_correct_html(self):
+        for country in self.test_countries:
+            response = self.client.get(country.get_absolute_url())
+            self.assertTemplateUsed(response, 'poll/country.html')
+
+    def test_image_loaded(self):
+        response = self.client.get(self.test_countries[0].get_absolute_url())
+        self.assertContains(response, response.context['img'])
+
+
 class TestPollView(TestCase):
     def setUp(self):
         create_some_countries()

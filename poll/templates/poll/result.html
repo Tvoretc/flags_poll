@@ -7,8 +7,8 @@
         </h3>
       {% endfor %}
     {% endif %}
-    <!-- <a class="btn btn-outline-primary btn-lg m-2" href="{% url 'poll' %}">Try again</a> -->
-    <form action="{% url 'result' %}" method="post">
+    <!-- <a class="btn btn-outline-primary btn-lg m-2" href="{% url 'poll:poll' %}">Try again</a> -->
+    <form action="{% url 'poll:result' %}" method="post">
       <p>Enter your email to get your score:</p>
       {{ form.as_p }}
       <input id="id_email_submit" type="submit" value="Send mail">

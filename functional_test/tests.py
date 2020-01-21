@@ -21,7 +21,6 @@ class NewVisitor(StaticLiveServerTestCase):
 
         start_poll = self.browser.find_element_by_id('start_poll')
         self.assertEqual(start_poll.get_attribute('type'), 'submit')
-
         start_poll.click()
 
         # Answers right four times
@@ -53,11 +52,13 @@ class NewVisitor(StaticLiveServerTestCase):
         self.assertIn('Your score: 4',
             self.browser.find_element_by_css_selector('.success').text)
 
+        # Enters email
         email_input = self.browser.find_element_by_id("id_email")
         email = 'a@gmail.com'
         email_input.send_keys(email)
         email_input.send_keys(Keys.ENTER)
-        
+
+        # checks mailbox
         self.assertEqual(len(mail.outbox), 1)
         sent_mail = mail.outbox[0]
         self.assertEqual([email], sent_mail.to)
