@@ -76,35 +76,36 @@ WSGI_APPLICATION = 'flags_poll.wsgi.application'
 # https://docs.djangoproject.com/en/2.2/ref/settings/#databases
 
 # for server
-# DATABASES = {
-#     'default': {
-#         # 'ENGINE': 'django.db.backends.sqlite3',
-#         # 'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
-#         'ENGINE': 'django.db.backends.mysql',
-#         'NAME': 'Tvoretc$Flags',
-#         'USER': 'Tvoretc',
-#         'PASSWORD': 'rootroot',
-#         'HOST': 'Tvoretc.mysql.pythonanywhere-services.com',
-#         'PORT': '',
-#     }
-# }
-
-
-
-DATABASES = {
-    'default': {
-        # 'ENGINE': 'django.db.backends.sqlite3',
-        # 'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
-        'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'Flags',
-        'USER': 'root',
-        'PASSWORD': '',
-        'HOST': 'localhost',
-        'PORT': '',
+if os.getenv('PYTHONANYWHERE'):
+    DATABASES = {
+        'default': {
+            # 'ENGINE': 'django.db.backends.sqlite3',
+            # 'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+            'ENGINE': 'django.db.backends.mysql',
+            'NAME': 'Tvoretc$Flags',
+            'USER': 'Tvoretc',
+            'PASSWORD': os.environ.get('db_password'),
+            'HOST': 'Tvoretc.mysql.pythonanywhere-services.com',
+            'PORT': '',
+        }
     }
-}
-
-# engine = create_engine('mysql://root:@localhost:3306/flags')
+else:
+    DATABASES = {
+        'default': {
+            'ENGINE': 'django.db.backends.mysql',
+            'NAME': 'Flags',
+            'USER': 'root',
+            'PASSWORD': '',
+            'HOST': 'localhost',
+            'PORT': '',
+        }
+    }
+    # DATABASES = {
+    #     'default': {
+    #         'ENGINE': 'django.db.backends.sqlite3',
+    #         'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+    #     }
+    # }
 
 
 # Password validation
@@ -155,6 +156,8 @@ STATIC_URL = '/static/'
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_HOST_USER = 'fereftbot@gmail.com'
-EMAIL_HOST_PASSWORD = os.environ.get('EMAIL_PASSWORD')
+EMAIL_HOST_PASSWORD = os.getenv('PYTHONANYWHERE')
+if EMAIL_HOST_PASSWORD == None:
+    EMAIL_HOST_PASSWORD = os.environ.get('EMAIL_PASSWORD')
 EMAIL_PORT = 587
 EMAIL_USE_TLS = True

@@ -20,7 +20,7 @@ class NewVisitor(StaticLiveServerTestCase):
 
     def test_poll(self):
         self.browser.get(self.live_server_url)
-        self.assertEqual(self.live_server_url+'/', self.browser.current_url)
+        self.assertEqual(f'{self.live_server_url}/', self.browser.current_url)
         self.assertIn('Countries Poll', self.browser.title)
 
         start_poll = self.browser.find_element_by_id('start_poll')
@@ -36,11 +36,9 @@ class NewVisitor(StaticLiveServerTestCase):
             flag = self.browser.find_element_by_id('flag_image')
             flag_src = flag.get_attribute('src').split('/')[-1]
             country = Country.objects.get(flag_128 = flag_src)
-            right_button = self.browser.find_element_by_css_selector(
+            self.browser.find_element_by_css_selector(
                 f'input[value="{country.name}"]'
-            )
-            # self.assertNotEqual(right_button, None)
-            right_button.click()
+            ).click()
 
         # answers wrong
         answers = self.browser.find_elements_by_name('answer')
@@ -101,7 +99,6 @@ class NewVisitor(StaticLiveServerTestCase):
         image = self.browser.find_element_by_tag_name('img')
         image_name = image.get_attribute('src').split('/')[-1]
         self.assertEqual(country.flag_128, image_name)
-
 
 
     def tearDown(self):

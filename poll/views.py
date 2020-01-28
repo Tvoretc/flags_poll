@@ -2,11 +2,19 @@ from django.shortcuts import render, redirect
 from django.views.generic.list import ListView
 from django.core.mail import send_mail
 from django.contrib import messages
+
 import random
 
 from poll.models import Country, Region, ScoreRecord
 from poll.forms import ScoreRecordForm
-# Create your views here.
+
+
+RESULT_WARNING_MESSAGE_NO_SCORE='Sorry, but we cant find your score.\
+ Did you actually had a poll?'
+RESULT_WARNING_MESSAGE_BAD_EMAIL='Invlid email'
+RESULT_SUCCESS_MESSAGE_EMAIL_SENT=\
+'We got you an email with your score. Keep up!'
+RESULT_MESSAGE_SCORE='Your score: '
 
 
 def indexView(request):
@@ -16,12 +24,12 @@ def indexView(request):
 def pollView(request):
     if request.method == 'POST':
         answer_id = request.session['answer_id']
-        answer = Country.objects.get(id = answer_id)
+        answer = Country.objects.get(id=answer_id)
 
         if answer.name == request.POST['answer']:
             request.session['score'] += 1
         else:
-            return redirect('/poll/result/')
+            return redirect('poll:result')
 
     else:
         request.session['score'] = 0
@@ -35,31 +43,23 @@ def pollView(request):
         request,
         'poll/poll.html',
         context = {
-            'items' : items,
+            'items': items,
             # 'chosen' : random.randrange(4),
-            'img' : f'poll/flags/{items[choice].flag_128}',
+            'img': f'poll/flags/{items[choice].flag_128}',
         }
     )
 
 
 def countryView(request, code3):
-    item = Country.objects.get(code3l = code3)
+    item = Country.objects.get(code3l=code3)
     return render(
         request,
         'poll/country.html',
-        context = {
-            'item' : item,
-            'img' : f'poll/flags/{item.flag_128}'
+        context={
+            'item': item,
+            'img': f'poll/flags/{item.flag_128}'
         }
     )
-
-
-RESULT_WARNING_MESSAGE_NO_SCORE='Sorry, but we cant find your score.\
- Did you actually had a poll?'
-RESULT_WARNING_MESSAGE_BAD_EMAIL='Invlid email'
-RESULT_SUCCESS_MESSAGE_EMAIL_SENT=\
-'We got you an email with your score. Keep up!'
-RESULT_MESSAGE_SCORE='Your score: '
 
 
 def pollResultView(request):
@@ -91,7 +91,11 @@ def pollResultView(request):
     else:
         messages.success(request, RESULT_MESSAGE_SCORE+str(score))
 
-    return render(request, 'poll/result.html', {'form' : ScoreRecordForm()})
+    return render(
+        request,
+        'poll/result.html',
+        {'form': ScoreRecordForm()}
+    )
 
 
 def get_four_random_countries():
@@ -100,20 +104,26 @@ def get_four_random_countries():
     count = Country.objects.count()
     ids = list(range(1, count))  # id start with 1
     random.shuffle(ids)
-    return list(Country.objects.filter(id__in = ids[:4]))
+    return list(Country.objects.filter(id__in=ids[:4]))
 
 
 def countriesByRegionsView(request):
     regions = list(Region.objects.all())
-    country_list = {region : list(
+    country_list = {
+        region: list(
             region.country for region in region.countryregion_set.all()
-        ) for region in regions}
-    # print(country_list)
-    return render(request, 'poll/country_by_region.html', context = {
-        'country_list' : country_list,
-    })
+        ) for region in regions
+    }
+
+    return render(
+        request,
+        'poll/country_by_region.html',
+        context={
+            'country_list': country_list,
+        }
+    )
 
 
 class CountryListView(ListView):
     model = Country
-    paginate = 20
+    paginate_by = 14
