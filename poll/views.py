@@ -9,11 +9,11 @@ from poll.models import Country, Region, ScoreRecord
 from poll.forms import ScoreRecordForm
 
 
-RESULT_WARNING_MESSAGE_NO_SCORE='Sorry, but we cant find your score.\
- Did you actually had a poll?'
+RESULT_WARNING_MESSAGE_NO_SCORE='Sorry, but we cant find your score. \
+Did you actually had a poll?'
 RESULT_WARNING_MESSAGE_BAD_EMAIL='Invlid email'
-RESULT_SUCCESS_MESSAGE_EMAIL_SENT=\
-'We got you an email with your score. Keep up!'
+RESULT_SUCCESS_MESSAGE_EMAIL_SENT='We got you an email with your score. \
+Keep up!'
 RESULT_MESSAGE_SCORE='Your score: '
 
 
@@ -33,7 +33,6 @@ def pollView(request):
 
     else:
         request.session['score'] = 0
-    # print('\n\npoll')
 
     items = get_four_random_countries()
     choice = random.randrange(4)
@@ -44,7 +43,6 @@ def pollView(request):
         'poll/poll.html',
         context = {
             'items': items,
-            # 'chosen' : random.randrange(4),
             'img': f'poll/flags/{items[choice].flag_128}',
         }
     )
@@ -52,6 +50,7 @@ def pollView(request):
 
 def countryView(request, code3):
     item = Country.objects.get(code3l=code3)
+    
     return render(
         request,
         'poll/country.html',

@@ -6,12 +6,17 @@ class Country(models.Model):
     enabled = models.PositiveIntegerField(default=1)
     code3l = models.CharField(unique=True, max_length=3)
     code2l = models.CharField(unique=True, max_length=2)
+
     name = models.CharField(unique=True, max_length=64)
     name_official = models.CharField(max_length=128, blank=True, default='')
+
     flag_32 = models.CharField(max_length=255, blank=True, default='')
     flag_128 = models.CharField(max_length=255, blank=True, default='')
-    latitude = models.DecimalField(max_digits=10, decimal_places=8, blank=True, null=True)
-    longitude = models.DecimalField(max_digits=11, decimal_places=8, blank=True, null=True)
+
+    latitude = models.DecimalField(max_digits=10, decimal_places=8,
+        blank=True, null=True)
+    longitude = models.DecimalField(max_digits=11, decimal_places=8,
+        blank=True, null=True)
     zoom = models.IntegerField(blank=True, null=True)
 
     def __str__(self):
@@ -29,6 +34,7 @@ class CountryName(models.Model):
     country = models.ForeignKey(Country, models.CASCADE)
     code2l = models.CharField(max_length=2)
     language = models.CharField(max_length=5)
+    
     name = models.CharField(max_length=255, blank=True, default='')
     name_official = models.CharField(max_length=255, blank=True, default='')
     source = models.CharField(max_length=255, blank=True, default='')

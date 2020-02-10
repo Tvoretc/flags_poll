@@ -23,6 +23,8 @@ class Migration(migrations.Migration):
                     code2l = country['code2l'],
                     name = country['name'],
                     name_official = country['name_official'],
+                    flag_32 = f'{country["code2l"]}-32.png',
+                    flag_128 = f'{country["code2l"]}-128.png',
                     latitude = country['latitude'],
                     longitude = country['longitude'],
                     zoom = country['zoom'],

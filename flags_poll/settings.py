@@ -145,19 +145,24 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/2.2/howto/static-files/
 
 STATIC_URL = '/static/'
-# # for server
-# STATICFILES_DIRS = [
-#     os.path.join(BASE_DIR, 'poll', "static"),
-#     '/static/',
-# ]
+
+# for server
+if os.getenv('PYTHONANYWHERE'):
+    STATICFILES_DIRS = [
+        os.path.join(BASE_DIR, 'poll', "static"),
+        '/static/',
+    ]
 
 # Emain info for login
 
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+
 EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_HOST_USER = 'fereftbot@gmail.com'
 EMAIL_HOST_PASSWORD = os.getenv('PYTHONANYWHERE')
+
 if EMAIL_HOST_PASSWORD == None:
     EMAIL_HOST_PASSWORD = os.environ.get('EMAIL_PASSWORD')
+
 EMAIL_PORT = 587
 EMAIL_USE_TLS = True

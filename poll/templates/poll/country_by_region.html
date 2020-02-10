@@ -1,17 +1,21 @@
 {% extends 'poll/base.html' %}
 {% load static %}
 {% block main_body %}
+
   {% for region, list in country_list.items %}
     <button class="btn" role="button" data-target="#countries_list_id{{forloop.counter}}" data-toggle="collapse">{{region}}</button>
   {% endfor %}
+
   <hr id="list_hr_id">
   {% for region, list in country_list.items %}
     <div class="collapse" id="countries_list_id{{forloop.counter}}">
+
       {% for item in list %}
         {% with 'poll/flags/'|add:item.flag_32 as img %}
         <p><img src="{% static img %}" alt=""> {{item.name}}</p>
         {% endwith %}
       {% endfor %}
+
     </div>
   {% endfor %}
 {% endblock %}

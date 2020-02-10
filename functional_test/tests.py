@@ -1,4 +1,5 @@
 import os
+
 from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
 
@@ -36,6 +37,7 @@ class NewVisitor(StaticLiveServerTestCase):
             flag = self.browser.find_element_by_id('flag_image')
             flag_src = flag.get_attribute('src').split('/')[-1]
             country = Country.objects.get(flag_128 = flag_src)
+            
             self.browser.find_element_by_css_selector(
                 f'input[value="{country.name}"]'
             ).click()

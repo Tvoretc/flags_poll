@@ -5,5 +5,6 @@ from poll.models import Country, CountryName, Region, CountryRegion
 
 admin.site.register(Country)
 admin.site.register(CountryName)
+
 admin.site.register(Region)
 admin.site.register(CountryRegion)
