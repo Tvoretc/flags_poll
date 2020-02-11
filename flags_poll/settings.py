@@ -148,13 +148,9 @@ STATIC_URL = '/static/'
 
 # for server
 if os.getenv('PYTHONANYWHERE'):
-    STATICFILES_DIRS = [
-        os.path.join(BASE_DIR, 'poll', "static"),
-        '/static/',
-    ]
+    STATIC_ROOT = os.path.join(BASE_DIR, "static")
 
-# Emain info for login
-
+# Email info for login
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 
 EMAIL_HOST = 'smtp.gmail.com'
