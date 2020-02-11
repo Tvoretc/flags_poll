@@ -7,7 +7,6 @@ import random
 
 from poll.models import Country, Region, ScoreRecord
 from poll.forms import ScoreRecordForm
-import os
 
 RESULT_WARNING_MESSAGE_NO_SCORE='Sorry, but we cant find your score. \
 Did you actually had a poll?'
@@ -73,7 +72,7 @@ def pollResultView(request):
             email = form.cleaned_data['email']
             request.session.clear()
             ScoreRecord.objects.create(email=email, score=score)
-            print(f'Password: {os.environ.get("db_password")}')
+            
             send_mail(
                 'Your score in Country poll',
                 f'Your score was {score}. Get even better next time!',
