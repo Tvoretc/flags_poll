@@ -50,7 +50,7 @@ def pollView(request):
 
 def countryView(request, code3):
     item = Country.objects.get(code3l=code3)
-    
+
     return render(
         request,
         'poll/country.html',
@@ -73,7 +73,7 @@ def pollResultView(request):
             email = form.cleaned_data['email']
             request.session.clear()
             ScoreRecord.objects.create(email=email, score=score)
-
+            print(f'Password: {os.environ.get("db_password")}')
             send_mail(
                 'Your score in Country poll',
                 f'Your score was {score}. Get even better next time!',
