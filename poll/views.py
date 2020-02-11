@@ -7,7 +7,7 @@ import random
 
 from poll.models import Country, Region, ScoreRecord
 from poll.forms import ScoreRecordForm
-
+import os
 
 RESULT_WARNING_MESSAGE_NO_SCORE='Sorry, but we cant find your score. \
 Did you actually had a poll?'
