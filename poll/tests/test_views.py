@@ -1,6 +1,8 @@
 from django.test import TestCase
 from django.contrib.sessions.models import Session
 
+from random import shuffle
+
 from poll.models import Country
 from poll.views import  get_four_random_countries,\
                         RESULT_WARNING_MESSAGE_NO_SCORE,\
@@ -18,8 +20,9 @@ class TestIndexView(TestCase):
 
 class TestCountryView(TestCase):
     def setUp(self):
-        create_some_countries()
-        self.test_countries = Country.objects.filter(id__in = range(3))
+        self.test_countries = Country.objects.filter(
+            id__in=suffle(range(Country.objects.count))[:10]
+        )
 
     def test_view_returns_correct_html(self):
         for country in self.test_countries:
@@ -33,7 +36,7 @@ class TestCountryView(TestCase):
 
 class TestPollView(TestCase):
     def setUp(self):
-        create_some_countries()
+        pass
 
     def test_view_returns_correct_html(self):
         response = self.client.get('/poll/')
@@ -79,7 +82,7 @@ class TestPollView(TestCase):
 
 class TestFourRandomContries(TestCase):
     def setUp(self):
-        create_some_countries()
+        pass
 
     def test_returns_four(self):
         self.assertEqual(len(get_four_random_countries()), 4)
@@ -98,7 +101,7 @@ class TestFourRandomContries(TestCase):
 
 class TestCountriesByRegionsView(TestCase):
     def setUp(self):
-        create_some_countries()
+        pass
 
     def test_template_used(self):
         response = self.client.get('/poll/list/')
