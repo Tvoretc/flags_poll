@@ -72,7 +72,8 @@ def pollResultView(request):
             email = form.cleaned_data['email']
             request.session.clear()
             ScoreRecord.objects.create(email=email, score=score)
-            
+            from flags_poll import settings
+            print(settings.EMAIL_HOST_PASSWORD)
             send_mail(
                 'Your score in Country poll',
                 f'Your score was {score}. Get even better next time!',
