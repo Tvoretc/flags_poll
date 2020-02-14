@@ -72,7 +72,7 @@ def pollResultView(request):
             email = form.cleaned_data['email']
             request.session.clear()
             ScoreRecord.objects.create(email=email, score=score)
-            
+
             send_mail(
                 'Your score in Country poll',
                 f'Your score was {score}. Get even better next time!',
@@ -124,4 +124,4 @@ def countriesByRegionsView(request):
 
 class CountryListView(ListView):
     model = Country
-    paginate_by = 14
+    paginate_by = 15

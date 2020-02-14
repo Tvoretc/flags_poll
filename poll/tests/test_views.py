@@ -1,7 +1,7 @@
 from django.test import TestCase
 from django.contrib.sessions.models import Session
 
-from random import shuffle
+from random import sample
 
 from poll.models import Country
 from poll.views import  get_four_random_countries,\
@@ -9,7 +9,6 @@ from poll.views import  get_four_random_countries,\
                         RESULT_WARNING_MESSAGE_BAD_EMAIL,\
                         RESULT_SUCCESS_MESSAGE_EMAIL_SENT,\
                         RESULT_MESSAGE_SCORE
-from poll.tests.test_base import create_some_countries
 
 
 class TestIndexView(TestCase):
@@ -21,7 +20,7 @@ class TestIndexView(TestCase):
 class TestCountryView(TestCase):
     def setUp(self):
         self.test_countries = Country.objects.filter(
-            id__in=suffle(range(Country.objects.count))[:10]
+            id__in=sample(range(Country.objects.count()), 5)
         )
 
     def test_view_returns_correct_html(self):
@@ -93,7 +92,7 @@ class TestFourRandomContries(TestCase):
     #     self.assertNotEqual(get_four_random_countries(), get_four_random_countries())
 
     def test_items_are_unique(self):
-        for _ in range(10):
+        for _ in range(5):
             items = get_four_random_countries()
             for i in range(4):
                 for j in range(i+1,4):

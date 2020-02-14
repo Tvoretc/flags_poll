@@ -11,17 +11,6 @@
         "zoom": 6
     },
     {
-        "id": 199,
-        "enabled": true,
-        "code3l": "ALA",
-        "code2l": "AX",
-        "name": "\u00c5land Islands",
-        "name_official": "\u00c5land Islands",
-        "latitude": "60.25403213",
-        "longitude": "20.35918350",
-        "zoom": 9
-    },
-    {
         "id": 2,
         "enabled": true,
         "code3l": "ALB",
@@ -44,17 +33,6 @@
         "zoom": 5
     },
     {
-        "id": 197,
-        "enabled": true,
-        "code3l": "ASM",
-        "code2l": "AS",
-        "name": "American Samoa",
-        "name_official": "The United States Territory of American Samoa",
-        "latitude": "-14.30634641",
-        "longitude": "-170.69501750",
-        "zoom": 11
-    },
-    {
         "id": 4,
         "enabled": true,
         "code3l": "AND",
@@ -75,28 +53,6 @@
         "latitude": "-12.16469683",
         "longitude": "16.70933622",
         "zoom": 6
-    },
-    {
-        "id": 195,
-        "enabled": true,
-        "code3l": "AIA",
-        "code2l": "AI",
-        "name": "Anguilla",
-        "name_official": "Anguilla",
-        "latitude": "18.22053521",
-        "longitude": "-63.06861300",
-        "zoom": 12
-    },
-    {
-        "id": 196,
-        "enabled": true,
-        "code3l": "ATA",
-        "code2l": "AQ",
-        "name": "Antarctica",
-        "name_official": "Antarctica",
-        "latitude": "-45.13806295",
-        "longitude": "10.48095703",
-        "zoom": 2
     },
     {
         "id": 6,
@@ -130,17 +86,6 @@
         "latitude": "40.13475528",
         "longitude": "45.01072318",
         "zoom": 7
-    },
-    {
-        "id": 198,
-        "enabled": true,
-        "code3l": "ABW",
-        "code2l": "AW",
-        "name": "Aruba",
-        "name_official": "Aruba of the Kingdom of the Netherlands",
-        "latitude": "12.52109661",
-        "longitude": "-69.96833800",
-        "zoom": 12
     },
     {
         "id": 9,
@@ -264,17 +209,6 @@
         "zoom": 7
     },
     {
-        "id": 201,
-        "enabled": true,
-        "code3l": "BMU",
-        "code2l": "BM",
-        "name": "Bermuda",
-        "name_official": "Bermudas",
-        "latitude": "32.31995785",
-        "longitude": "-64.76182765",
-        "zoom": 12
-    },
-    {
         "id": 20,
         "enabled": true,
         "code3l": "BTN",
@@ -284,28 +218,6 @@
         "latitude": "27.50752756",
         "longitude": "90.43360300",
         "zoom": 8
-    },
-    {
-        "id": 182,
-        "enabled": true,
-        "code3l": "BOL",
-        "code2l": "BO",
-        "name": "Bolivia (Plurinational State of)",
-        "name_official": "Plurinational State of Bolivia",
-        "latitude": "-16.74518128",
-        "longitude": "-65.19265691",
-        "zoom": 6
-    },
-    {
-        "id": 202,
-        "enabled": true,
-        "code3l": "BES",
-        "code2l": "BQ",
-        "name": "Bonaire, Saint Eustatius And Saba",
-        "name_official": "Bonaire, Saint Eustatius and Saba",
-        "latitude": "12.17229702",
-        "longitude": "-68.28831170",
-        "zoom": 11
     },
     {
         "id": 21,
@@ -330,17 +242,6 @@
         "zoom": 6
     },
     {
-        "id": 203,
-        "enabled": true,
-        "code3l": "BVT",
-        "code2l": "BV",
-        "name": "Bouvet Island",
-        "name_official": "Bouvet Island",
-        "latitude": "-54.42316906",
-        "longitude": "3.41319600",
-        "zoom": 12
-    },
-    {
         "id": 23,
         "enabled": true,
         "code3l": "BRA",
@@ -350,17 +251,6 @@
         "latitude": "-11.80965046",
         "longitude": "-53.33152600",
         "zoom": 4
-    },
-    {
-        "id": 220,
-        "enabled": true,
-        "code3l": "IOT",
-        "code2l": "IO",
-        "name": "British Indian Ocean Territory",
-        "name_official": "The British Indian Ocean Territory",
-        "latitude": "-7.33461519",
-        "longitude": "72.42425280",
-        "zoom": 12
     },
     {
         "id": 24,
@@ -407,17 +297,6 @@
         "zoom": 8
     },
     {
-        "id": 31,
-        "enabled": true,
-        "code3l": "CPV",
-        "code2l": "CV",
-        "name": "Cabo Verde",
-        "name_official": "Republic of Cabo Verde",
-        "latitude": "15.11988711",
-        "longitude": "-23.60517010",
-        "zoom": 10
-    },
-    {
         "id": 28,
         "enabled": true,
         "code3l": "KHM",
@@ -451,15 +330,15 @@
         "zoom": 4
     },
     {
-        "id": 222,
+        "id": 31,
         "enabled": true,
-        "code3l": "CYM",
-        "code2l": "KY",
-        "name": "Cayman Islands",
-        "name_official": "The Cayman Islands",
-        "latitude": "19.31322102",
-        "longitude": "-81.25459800",
-        "zoom": 11
+        "code3l": "CPV",
+        "code2l": "CV",
+        "name": "Cabo Verde",
+        "name_official": "Republic of Cabo Verde",
+        "latitude": "15.11988711",
+        "longitude": "-23.60517010",
+        "zoom": 10
     },
     {
         "id": 32,
@@ -506,28 +385,6 @@
         "zoom": 4
     },
     {
-        "id": 206,
-        "enabled": true,
-        "code3l": "CXR",
-        "code2l": "CX",
-        "name": "Christmas Island",
-        "name_official": "Territory of Christmas Island",
-        "latitude": "-10.49170619",
-        "longitude": "105.68083796",
-        "zoom": 11
-    },
-    {
-        "id": 204,
-        "enabled": true,
-        "code3l": "CCK",
-        "code2l": "CC",
-        "name": "Cocos (Keeling) Islands",
-        "name_official": "Territory of Cocos (Keeling) Islands",
-        "latitude": "-12.12890685",
-        "longitude": "96.84689104",
-        "zoom": 12
-    },
-    {
         "id": 36,
         "enabled": true,
         "code3l": "COL",
@@ -561,17 +418,6 @@
         "zoom": 6
     },
     {
-        "id": 181,
-        "enabled": true,
-        "code3l": "COK",
-        "code2l": "CK",
-        "name": "Cook Islands",
-        "name_official": "Cook Islands",
-        "latitude": "-21.23673066",
-        "longitude": "-159.77766900",
-        "zoom": 13
-    },
-    {
         "id": 39,
         "enabled": true,
         "code3l": "CRI",
@@ -581,17 +427,6 @@
         "latitude": "9.98427463",
         "longitude": "-84.09949534",
         "zoom": 8
-    },
-    {
-        "id": 44,
-        "enabled": true,
-        "code3l": "CIV",
-        "code2l": "CI",
-        "name": "C\u00f4te d'Ivoire",
-        "name_official": "Republic of C\u00f4te d'Ivoire",
-        "latitude": "7.59684148",
-        "longitude": "-5.49214636",
-        "zoom": 7
     },
     {
         "id": 40,
@@ -616,17 +451,6 @@
         "zoom": 6
     },
     {
-        "id": 205,
-        "enabled": true,
-        "code3l": "CUW",
-        "code2l": "CW",
-        "name": "Cura\u00e7ao",
-        "name_official": "Cura\u00e7ao",
-        "latitude": "12.20710309",
-        "longitude": "-69.02160369",
-        "zoom": 11
-    },
-    {
         "id": 42,
         "enabled": true,
         "code3l": "CYP",
@@ -649,26 +473,15 @@
         "zoom": 7
     },
     {
-        "id": 188,
+        "id": 44,
         "enabled": true,
-        "code3l": "PRK",
-        "code2l": "KP",
-        "name": "Democratic People's Republic of Korea",
-        "name_official": "Democratic People's Republic of Korea",
-        "latitude": "40.00785500",
-        "longitude": "127.48812834",
-        "zoom": 6
-    },
-    {
-        "id": 183,
-        "enabled": true,
-        "code3l": "COD",
-        "code2l": "CD",
-        "name": "Democratic Republic of the Congo",
-        "name_official": "Democratic Republic of Congo",
-        "latitude": "-4.05373938",
-        "longitude": "23.01110741",
-        "zoom": 5
+        "code3l": "CIV",
+        "code2l": "CI",
+        "name": "C\u00f4te d'Ivoire",
+        "name_official": "Republic of C\u00f4te d'Ivoire",
+        "latitude": "7.59684148",
+        "longitude": "-5.49214636",
+        "zoom": 7
     },
     {
         "id": 45,
@@ -792,39 +605,6 @@
         "zoom": 6
     },
     {
-        "id": 184,
-        "enabled": true,
-        "code3l": "EUR",
-        "code2l": "EU",
-        "name": "European Union",
-        "name_official": "European Union",
-        "latitude": "48.76380654",
-        "longitude": "14.26843140",
-        "zoom": 3
-    },
-    {
-        "id": 208,
-        "enabled": true,
-        "code3l": "FLK",
-        "code2l": "FK",
-        "name": "Falkland Islands (Malvinas)",
-        "name_official": "Falkland Islands",
-        "latitude": "-51.78838251",
-        "longitude": "-59.52361100",
-        "zoom": 8
-    },
-    {
-        "id": 209,
-        "enabled": true,
-        "code3l": "FRO",
-        "code2l": "FO",
-        "name": "Faroe Islands (Associate Member)",
-        "name_official": "Faroe Islands",
-        "latitude": "61.88590482",
-        "longitude": "-6.91180400",
-        "zoom": 8
-    },
-    {
         "id": 56,
         "enabled": true,
         "code3l": "FJI",
@@ -856,39 +636,6 @@
         "latitude": "46.48372145",
         "longitude": "2.60926281",
         "zoom": 6
-    },
-    {
-        "id": 210,
-        "enabled": true,
-        "code3l": "GUF",
-        "code2l": "GF",
-        "name": "French Guiana",
-        "name_official": "French Guiana",
-        "latitude": "4.01114381",
-        "longitude": "-52.97746057",
-        "zoom": 7
-    },
-    {
-        "id": 230,
-        "enabled": true,
-        "code3l": "PYF",
-        "code2l": "PF",
-        "name": "French Polynesia",
-        "name_official": "Territory of French Polynesia",
-        "latitude": "-17.66243898",
-        "longitude": "-149.40683900",
-        "zoom": 10
-    },
-    {
-        "id": 240,
-        "enabled": true,
-        "code3l": "ATF",
-        "code2l": "TF",
-        "name": "French Southern and Antarctic Lands",
-        "name_official": "Territory of the French Southern and Antarctic Lands",
-        "latitude": "-49.27235903",
-        "longitude": "69.34856300",
-        "zoom": 8
     },
     {
         "id": 59,
@@ -946,17 +693,6 @@
         "zoom": 7
     },
     {
-        "id": 212,
-        "enabled": true,
-        "code3l": "GIB",
-        "code2l": "GI",
-        "name": "Gibraltar",
-        "name_official": "Gibraltar",
-        "latitude": "36.14864641",
-        "longitude": "-5.34404779",
-        "zoom": 12
-    },
-    {
         "id": 64,
         "enabled": true,
         "code3l": "GRC",
@@ -966,17 +702,6 @@
         "latitude": "38.52254746",
         "longitude": "24.53794505",
         "zoom": 6
-    },
-    {
-        "id": 213,
-        "enabled": true,
-        "code3l": "GRL",
-        "code2l": "GL",
-        "name": "Greenland",
-        "name_official": "Greenland",
-        "latitude": "71.42932629",
-        "longitude": "-34.38651956",
-        "zoom": 3
     },
     {
         "id": 65,
@@ -990,28 +715,6 @@
         "zoom": 11
     },
     {
-        "id": 214,
-        "enabled": true,
-        "code3l": "GLP",
-        "code2l": "GP",
-        "name": "Guadeloupe",
-        "name_official": "Department of Guadeloupe",
-        "latitude": "16.26472785",
-        "longitude": "-61.55099400",
-        "zoom": 10
-    },
-    {
-        "id": 216,
-        "enabled": true,
-        "code3l": "GUM",
-        "code2l": "GU",
-        "name": "Guam",
-        "name_official": "Territory of Guam",
-        "latitude": "13.44410137",
-        "longitude": "144.80747791",
-        "zoom": 10
-    },
-    {
         "id": 66,
         "enabled": true,
         "code3l": "GTM",
@@ -1021,17 +724,6 @@
         "latitude": "15.72598421",
         "longitude": "-89.96707712",
         "zoom": 7
-    },
-    {
-        "id": 211,
-        "enabled": true,
-        "code3l": "GGY",
-        "code2l": "GG",
-        "name": "Guernsey",
-        "name_official": "Bailiwick of Guernsey",
-        "latitude": "49.46565975",
-        "longitude": "-2.58527200",
-        "zoom": 12
     },
     {
         "id": 67,
@@ -1078,28 +770,6 @@
         "zoom": 8
     },
     {
-        "id": 218,
-        "enabled": true,
-        "code3l": "HMD",
-        "code2l": "HM",
-        "name": "Heard Island And McDonald Islands",
-        "name_official": "Heard and McDonald Islands",
-        "latitude": "-53.08168847",
-        "longitude": "73.50415800",
-        "zoom": 11
-    },
-    {
-        "id": 245,
-        "enabled": true,
-        "code3l": "VAT",
-        "code2l": "VA",
-        "name": "Holy See",
-        "name_official": "Holy see",
-        "latitude": "41.90377810",
-        "longitude": "12.45340142",
-        "zoom": 16
-    },
-    {
         "id": 71,
         "enabled": true,
         "code3l": "HND",
@@ -1109,17 +779,6 @@
         "latitude": "14.64994423",
         "longitude": "-87.01643713",
         "zoom": 7
-    },
-    {
-        "id": 217,
-        "enabled": true,
-        "code3l": "HKG",
-        "code2l": "HK",
-        "name": "Hong Kong",
-        "name_official": "Hong Kong Special Administrative Region of the People's Republic",
-        "latitude": "22.33728531",
-        "longitude": "114.14657786",
-        "zoom": 11
     },
     {
         "id": 72,
@@ -1166,17 +825,6 @@
         "zoom": 4
     },
     {
-        "id": 187,
-        "enabled": true,
-        "code3l": "IRN",
-        "code2l": "IR",
-        "name": "Iran (Islamic Republic of)",
-        "name_official": "Islamic Republic of Iran",
-        "latitude": "31.40240324",
-        "longitude": "51.28204814",
-        "zoom": 5
-    },
-    {
         "id": 76,
         "enabled": true,
         "code3l": "IRQ",
@@ -1197,17 +845,6 @@
         "latitude": "53.10101628",
         "longitude": "-8.21092302",
         "zoom": 6
-    },
-    {
-        "id": 219,
-        "enabled": true,
-        "code3l": "IMN",
-        "code2l": "IM",
-        "name": "Isle of Man",
-        "name_official": "The Isle of Man",
-        "latitude": "54.23562697",
-        "longitude": "-4.54805400",
-        "zoom": 10
     },
     {
         "id": 78,
@@ -1252,17 +889,6 @@
         "latitude": "37.51848822",
         "longitude": "137.67066061",
         "zoom": 5
-    },
-    {
-        "id": 221,
-        "enabled": true,
-        "code3l": "JEY",
-        "code2l": "JE",
-        "name": "Jersey",
-        "name_official": "Bailiwick of Jersey",
-        "latitude": "49.21440771",
-        "longitude": "-2.13124600",
-        "zoom": 12
     },
     {
         "id": 82,
@@ -1430,17 +1056,6 @@
         "zoom": 9
     },
     {
-        "id": 224,
-        "enabled": true,
-        "code3l": "MAC",
-        "code2l": "MO",
-        "name": "Macao",
-        "name_official": "Macau Special Administrative Region",
-        "latitude": "22.19872287",
-        "longitude": "113.54387700",
-        "zoom": 12
-    },
-    {
         "id": 97,
         "enabled": true,
         "code3l": "MDG",
@@ -1518,17 +1133,6 @@
         "zoom": 10
     },
     {
-        "id": 226,
-        "enabled": true,
-        "code3l": "MTQ",
-        "code2l": "MQ",
-        "name": "Martinique",
-        "name_official": "Department of Martinique",
-        "latitude": "14.64128045",
-        "longitude": "-61.02417600",
-        "zoom": 10
-    },
-    {
         "id": 104,
         "enabled": true,
         "code3l": "MRT",
@@ -1551,17 +1155,6 @@
         "zoom": 10
     },
     {
-        "id": 249,
-        "enabled": true,
-        "code3l": "MYT",
-        "code2l": "YT",
-        "name": "Mayotte",
-        "name_official": "Overseas Department of Mayotte",
-        "latitude": "-12.82744522",
-        "longitude": "45.16624200",
-        "zoom": 11
-    },
-    {
         "id": 106,
         "enabled": true,
         "code3l": "MEX",
@@ -1571,17 +1164,6 @@
         "latitude": "22.92036676",
         "longitude": "-102.33305344",
         "zoom": 5
-    },
-    {
-        "id": 185,
-        "enabled": true,
-        "code3l": "FSM",
-        "code2l": "FM",
-        "name": "Micronesia (Federated States of)",
-        "name_official": "Federated States of Micronesia",
-        "latitude": "6.88747377",
-        "longitude": "158.21507170",
-        "zoom": 12
     },
     {
         "id": 107,
@@ -1615,17 +1197,6 @@
         "latitude": "42.71699590",
         "longitude": "19.09699321",
         "zoom": 8
-    },
-    {
-        "id": 227,
-        "enabled": true,
-        "code3l": "MSR",
-        "code2l": "MS",
-        "name": "Montserrat",
-        "name_official": "Montserrat",
-        "latitude": "16.74774077",
-        "longitude": "-62.18736600",
-        "zoom": 12
     },
     {
         "id": 110,
@@ -1705,17 +1276,6 @@
         "zoom": 7
     },
     {
-        "id": 228,
-        "enabled": true,
-        "code3l": "NCL",
-        "code2l": "NC",
-        "name": "New Caledonia",
-        "name_official": "Territory of New Caledonia and Dependencies",
-        "latitude": "-21.26104020",
-        "longitude": "165.58783760",
-        "zoom": 8
-    },
-    {
         "id": 117,
         "enabled": true,
         "code3l": "NZL",
@@ -1760,39 +1320,6 @@
         "zoom": 6
     },
     {
-        "id": 192,
-        "enabled": true,
-        "code3l": "NIU",
-        "code2l": "NU",
-        "name": "Niue",
-        "name_official": "Niue",
-        "latitude": "-19.04976362",
-        "longitude": "-169.86585571",
-        "zoom": 11
-    },
-    {
-        "id": 229,
-        "enabled": true,
-        "code3l": "NFK",
-        "code2l": "NF",
-        "name": "Norfolk Island",
-        "name_official": "Norfolk Islands",
-        "latitude": "-29.02801043",
-        "longitude": "167.94303023",
-        "zoom": 13
-    },
-    {
-        "id": 225,
-        "enabled": true,
-        "code3l": "MNP",
-        "code2l": "MP",
-        "name": "Northern Mariana Islands",
-        "name_official": "Commonwealth of the Northern Mariana Islands",
-        "latitude": "15.09783636",
-        "longitude": "145.67390000",
-        "zoom": 11
-    },
-    {
         "id": 121,
         "enabled": true,
         "code3l": "NOR",
@@ -1835,17 +1362,6 @@
         "latitude": "7.49856307",
         "longitude": "134.57291496",
         "zoom": 10
-    },
-    {
-        "id": 234,
-        "enabled": true,
-        "code3l": "PSE",
-        "code2l": "PS",
-        "name": "Palestinian Territory, Occupied",
-        "name_official": "Occupied Palestinian Territory",
-        "latitude": "32.26367103",
-        "longitude": "35.21936714",
-        "zoom": 8
     },
     {
         "id": 125,
@@ -1903,17 +1419,6 @@
         "zoom": 6
     },
     {
-        "id": 232,
-        "enabled": true,
-        "code3l": "PCN",
-        "code2l": "PN",
-        "name": "Pitcairn Islands",
-        "name_official": "Pitcairn Group of Islands",
-        "latitude": "-24.37673925",
-        "longitude": "-128.32423730",
-        "zoom": 13
-    },
-    {
         "id": 130,
         "enabled": true,
         "code3l": "POL",
@@ -1936,17 +1441,6 @@
         "zoom": 6
     },
     {
-        "id": 233,
-        "enabled": true,
-        "code3l": "PRI",
-        "code2l": "PR",
-        "name": "Puerto Rico",
-        "name_official": "Commonwealth of Puerto Rico",
-        "latitude": "18.21963053",
-        "longitude": "-66.59015100",
-        "zoom": 9
-    },
-    {
         "id": 132,
         "enabled": true,
         "code3l": "QAT",
@@ -1956,39 +1450,6 @@
         "latitude": "25.24551555",
         "longitude": "51.24431480",
         "zoom": 8
-    },
-    {
-        "id": 189,
-        "enabled": true,
-        "code3l": "KOR",
-        "code2l": "KR",
-        "name": "Republic of Korea",
-        "name_official": "Republic of Korea",
-        "latitude": "36.56344139",
-        "longitude": "127.51424646",
-        "zoom": 7
-    },
-    {
-        "id": 190,
-        "enabled": true,
-        "code3l": "MDA",
-        "code2l": "MD",
-        "name": "Republic of Moldova",
-        "name_official": "Republic of Moldova",
-        "latitude": "47.10710437",
-        "longitude": "28.54018109",
-        "zoom": 7
-    },
-    {
-        "id": 235,
-        "enabled": true,
-        "code3l": "REU",
-        "code2l": "RE",
-        "name": "R\u00e9union",
-        "name_official": "Department of Reunion",
-        "latitude": "-21.11480084",
-        "longitude": "55.53638200",
-        "zoom": 10
     },
     {
         "id": 133,
@@ -2024,28 +1485,6 @@
         "zoom": 8
     },
     {
-        "id": 200,
-        "enabled": true,
-        "code3l": "BLM",
-        "code2l": "BL",
-        "name": "Saint Barth\u00e9lemy",
-        "name_official": "Territorial collectivity of Saint Barth\u00e9lemy",
-        "latitude": "17.90042417",
-        "longitude": "-62.83376215",
-        "zoom": 13
-    },
-    {
-        "id": 236,
-        "enabled": true,
-        "code3l": "SHN",
-        "code2l": "SH",
-        "name": "Saint Helena, Ascension and Tristan da Cunha",
-        "name_official": "Saint Helena, Ascension and Tristan da Cunha",
-        "latitude": "-37.10521846",
-        "longitude": "-12.27768580",
-        "zoom": 12
-    },
-    {
         "id": 136,
         "enabled": true,
         "code3l": "KNA",
@@ -2066,28 +1505,6 @@
         "latitude": "13.90938495",
         "longitude": "-60.97889500",
         "zoom": 11
-    },
-    {
-        "id": 223,
-        "enabled": true,
-        "code3l": "MAF",
-        "code2l": "MF",
-        "name": "Saint Martin",
-        "name_official": "Saint Martin",
-        "latitude": "18.07637107",
-        "longitude": "-63.05019106",
-        "zoom": 12
-    },
-    {
-        "id": 231,
-        "enabled": true,
-        "code3l": "SPM",
-        "code2l": "PM",
-        "name": "Saint Pierre and Miquelon",
-        "name_official": "Saint Pierre and Miquelon",
-        "latitude": "46.88469499",
-        "longitude": "-56.31590200",
-        "zoom": 10
     },
     {
         "id": 138,
@@ -2200,17 +1617,6 @@
         "zoom": 11
     },
     {
-        "id": 238,
-        "enabled": true,
-        "code3l": "SXM",
-        "code2l": "SX",
-        "name": "Sint Maarten",
-        "name_official": "Sint Maarten",
-        "latitude": "18.04433885",
-        "longitude": "-63.05616320",
-        "zoom": 12
-    },
-    {
         "id": 148,
         "enabled": true,
         "code3l": "SVK",
@@ -2266,28 +1672,6 @@
         "zoom": 5
     },
     {
-        "id": 215,
-        "enabled": true,
-        "code3l": "SGS",
-        "code2l": "GS",
-        "name": "South Georgia and the South Sandwich Islands",
-        "name_official": "South Georgia and the South Sandwich Islands",
-        "latitude": "-54.38130284",
-        "longitude": "-36.67305304",
-        "zoom": 9
-    },
-    {
-        "id": 250,
-        "enabled": true,
-        "code3l": "SSD",
-        "code2l": "SS",
-        "name": "South Sudan",
-        "name_official": "Republic of South Sudan",
-        "latitude": "7.91320803",
-        "longitude": "30.15342434",
-        "zoom": 6
-    },
-    {
         "id": 153,
         "enabled": true,
         "code3l": "ESP",
@@ -2330,17 +1714,6 @@
         "latitude": "4.26470865",
         "longitude": "-55.93988238",
         "zoom": 7
-    },
-    {
-        "id": 237,
-        "enabled": true,
-        "code3l": "SJM",
-        "code2l": "SJ",
-        "name": "Svalbard and Jan Mayen",
-        "name_official": "Svalbard and Jan Mayen",
-        "latitude": "77.92215764",
-        "longitude": "18.99010622",
-        "zoom": 4
     },
     {
         "id": 157,
@@ -2387,17 +1760,6 @@
         "zoom": 6
     },
     {
-        "id": 242,
-        "enabled": true,
-        "code3l": "TWN",
-        "code2l": "TW",
-        "name": "Taiwan",
-        "name_official": "Republic of China",
-        "latitude": "23.71891402",
-        "longitude": "121.10884043",
-        "zoom": 7
-    },
-    {
         "id": 161,
         "enabled": true,
         "code3l": "TJK",
@@ -2420,17 +1782,6 @@
         "zoom": 5
     },
     {
-        "id": 191,
-        "enabled": true,
-        "code3l": "MKD",
-        "code2l": "MK",
-        "name": "The former Yugoslav Republic of Macedonia",
-        "name_official": "The former Yugoslav Republic of Macedonia",
-        "latitude": "41.60059479",
-        "longitude": "21.74527900",
-        "zoom": 8
-    },
-    {
         "id": 163,
         "enabled": true,
         "code3l": "TLS",
@@ -2451,17 +1802,6 @@
         "latitude": "8.68089206",
         "longitude": "0.86049757",
         "zoom": 7
-    },
-    {
-        "id": 241,
-        "enabled": true,
-        "code3l": "TKL",
-        "code2l": "TK",
-        "name": "Tokelau (Associate Member)",
-        "name_official": "Tokelau",
-        "latitude": "-9.16682644",
-        "longitude": "-171.83981693",
-        "zoom": 10
     },
     {
         "id": 165,
@@ -2519,17 +1859,6 @@
         "zoom": 6
     },
     {
-        "id": 239,
-        "enabled": true,
-        "code3l": "TCA",
-        "code2l": "TC",
-        "name": "Turks and Caicos Islands",
-        "name_official": "Turks and Caicos Islands",
-        "latitude": "21.72816866",
-        "longitude": "-71.79654471",
-        "zoom": 9
-    },
-    {
         "id": 170,
         "enabled": true,
         "code3l": "TUV",
@@ -2574,61 +1903,6 @@
         "zoom": 7
     },
     {
-        "id": 186,
-        "enabled": true,
-        "code3l": "GBR",
-        "code2l": "GB",
-        "name": "United Kingdom",
-        "name_official": "United Kingdom of Great Britain and Northern Ireland",
-        "latitude": "53.36540813",
-        "longitude": "-2.72184767",
-        "zoom": 6
-    },
-    {
-        "id": 193,
-        "enabled": true,
-        "code3l": "TZA",
-        "code2l": "TZ",
-        "name": "United Republic of Tanzania",
-        "name_official": "United Republic of Tanzania",
-        "latitude": "-6.37551085",
-        "longitude": "34.85587302",
-        "zoom": 6
-    },
-    {
-        "id": 243,
-        "enabled": true,
-        "code3l": "UMI",
-        "code2l": "UM",
-        "name": "United States Minor Outlying Islands",
-        "name_official": "United States Minor Outlying Islands",
-        "latitude": "19.46305694",
-        "longitude": "177.98631092",
-        "zoom": 5
-    },
-    {
-        "id": 244,
-        "enabled": true,
-        "code3l": "USA",
-        "code2l": "US",
-        "name": "United States of America",
-        "name_official": "United States of America",
-        "latitude": "37.66895362",
-        "longitude": "-102.39256450",
-        "zoom": 4
-    },
-    {
-        "id": 247,
-        "enabled": true,
-        "code3l": "VIR",
-        "code2l": "VI",
-        "name": "United States Virgin Islands",
-        "name_official": "Virgin Islands of the United States",
-        "latitude": "18.01000938",
-        "longitude": "-64.77411410",
-        "zoom": 9
-    },
-    {
         "id": 174,
         "enabled": true,
         "code3l": "URY",
@@ -2662,17 +1936,6 @@
         "zoom": 8
     },
     {
-        "id": 194,
-        "enabled": true,
-        "code3l": "VEN",
-        "code2l": "VE",
-        "name": "Venezuela (Bolivarian Republic of)",
-        "name_official": "Bolivarian Republic of Venezuela",
-        "latitude": "5.98477766",
-        "longitude": "-65.94152264",
-        "zoom": 6
-    },
-    {
         "id": 177,
         "enabled": true,
         "code3l": "VNM",
@@ -2682,39 +1945,6 @@
         "latitude": "17.19931699",
         "longitude": "107.14012804",
         "zoom": 5
-    },
-    {
-        "id": 246,
-        "enabled": true,
-        "code3l": "VGB",
-        "code2l": "VG",
-        "name": "Virgin Islands",
-        "name_official": "British Virgin Islands",
-        "latitude": "17.67004187",
-        "longitude": "-64.77411010",
-        "zoom": 10
-    },
-    {
-        "id": 248,
-        "enabled": true,
-        "code3l": "WLF",
-        "code2l": "WF",
-        "name": "Wallis and Futuna",
-        "name_official": "Territory of the Wallis and Futuna Islands",
-        "latitude": "-14.29378486",
-        "longitude": "-178.11649800",
-        "zoom": 12
-    },
-    {
-        "id": 207,
-        "enabled": true,
-        "code3l": "ESH",
-        "code2l": "EH",
-        "name": "Western Sahara",
-        "name_official": "Western Sahara",
-        "latitude": "24.79324356",
-        "longitude": "-13.67683563",
-        "zoom": 6
     },
     {
         "id": 178,
@@ -2747,6 +1977,776 @@
         "name_official": "Republic of Zimbabwe",
         "latitude": "-19.00784952",
         "longitude": "30.18758584",
+        "zoom": 6
+    },
+    {
+        "id": 181,
+        "enabled": true,
+        "code3l": "COK",
+        "code2l": "CK",
+        "name": "Cook Islands",
+        "name_official": "Cook Islands",
+        "latitude": "-21.23673066",
+        "longitude": "-159.77766900",
+        "zoom": 13
+    },
+    {
+        "id": 182,
+        "enabled": true,
+        "code3l": "BOL",
+        "code2l": "BO",
+        "name": "Bolivia (Plurinational State of)",
+        "name_official": "Plurinational State of Bolivia",
+        "latitude": "-16.74518128",
+        "longitude": "-65.19265691",
+        "zoom": 6
+    },
+    {
+        "id": 183,
+        "enabled": true,
+        "code3l": "COD",
+        "code2l": "CD",
+        "name": "Democratic Republic of the Congo",
+        "name_official": "Democratic Republic of Congo",
+        "latitude": "-4.05373938",
+        "longitude": "23.01110741",
+        "zoom": 5
+    },
+    {
+        "id": 184,
+        "enabled": true,
+        "code3l": "EUR",
+        "code2l": "EU",
+        "name": "European Union",
+        "name_official": "European Union",
+        "latitude": "48.76380654",
+        "longitude": "14.26843140",
+        "zoom": 3
+    },
+    {
+        "id": 185,
+        "enabled": true,
+        "code3l": "FSM",
+        "code2l": "FM",
+        "name": "Micronesia (Federated States of)",
+        "name_official": "Federated States of Micronesia",
+        "latitude": "6.88747377",
+        "longitude": "158.21507170",
+        "zoom": 12
+    },
+    {
+        "id": 186,
+        "enabled": true,
+        "code3l": "GBR",
+        "code2l": "GB",
+        "name": "United Kingdom",
+        "name_official": "United Kingdom of Great Britain and Northern Ireland",
+        "latitude": "53.36540813",
+        "longitude": "-2.72184767",
+        "zoom": 6
+    },
+    {
+        "id": 187,
+        "enabled": true,
+        "code3l": "IRN",
+        "code2l": "IR",
+        "name": "Iran (Islamic Republic of)",
+        "name_official": "Islamic Republic of Iran",
+        "latitude": "31.40240324",
+        "longitude": "51.28204814",
+        "zoom": 5
+    },
+    {
+        "id": 188,
+        "enabled": true,
+        "code3l": "PRK",
+        "code2l": "KP",
+        "name": "Democratic People's Republic of Korea",
+        "name_official": "Democratic People's Republic of Korea",
+        "latitude": "40.00785500",
+        "longitude": "127.48812834",
+        "zoom": 6
+    },
+    {
+        "id": 189,
+        "enabled": true,
+        "code3l": "KOR",
+        "code2l": "KR",
+        "name": "Republic of Korea",
+        "name_official": "Republic of Korea",
+        "latitude": "36.56344139",
+        "longitude": "127.51424646",
+        "zoom": 7
+    },
+    {
+        "id": 190,
+        "enabled": true,
+        "code3l": "MDA",
+        "code2l": "MD",
+        "name": "Republic of Moldova",
+        "name_official": "Republic of Moldova",
+        "latitude": "47.10710437",
+        "longitude": "28.54018109",
+        "zoom": 7
+    },
+    {
+        "id": 191,
+        "enabled": true,
+        "code3l": "MKD",
+        "code2l": "MK",
+        "name": "The former Yugoslav Republic of Macedonia",
+        "name_official": "The former Yugoslav Republic of Macedonia",
+        "latitude": "41.60059479",
+        "longitude": "21.74527900",
+        "zoom": 8
+    },
+    {
+        "id": 192,
+        "enabled": true,
+        "code3l": "NIU",
+        "code2l": "NU",
+        "name": "Niue",
+        "name_official": "Niue",
+        "latitude": "-19.04976362",
+        "longitude": "-169.86585571",
+        "zoom": 11
+    },
+    {
+        "id": 193,
+        "enabled": true,
+        "code3l": "TZA",
+        "code2l": "TZ",
+        "name": "United Republic of Tanzania",
+        "name_official": "United Republic of Tanzania",
+        "latitude": "-6.37551085",
+        "longitude": "34.85587302",
+        "zoom": 6
+    },
+    {
+        "id": 194,
+        "enabled": true,
+        "code3l": "VEN",
+        "code2l": "VE",
+        "name": "Venezuela (Bolivarian Republic of)",
+        "name_official": "Bolivarian Republic of Venezuela",
+        "latitude": "5.98477766",
+        "longitude": "-65.94152264",
+        "zoom": 6
+    },
+    {
+        "id": 195,
+        "enabled": true,
+        "code3l": "AIA",
+        "code2l": "AI",
+        "name": "Anguilla",
+        "name_official": "Anguilla",
+        "latitude": "18.22053521",
+        "longitude": "-63.06861300",
+        "zoom": 12
+    },
+    {
+        "id": 196,
+        "enabled": true,
+        "code3l": "ATA",
+        "code2l": "AQ",
+        "name": "Antarctica",
+        "name_official": "Antarctica",
+        "latitude": "-45.13806295",
+        "longitude": "10.48095703",
+        "zoom": 2
+    },
+    {
+        "id": 197,
+        "enabled": true,
+        "code3l": "ASM",
+        "code2l": "AS",
+        "name": "American Samoa",
+        "name_official": "The United States Territory of American Samoa",
+        "latitude": "-14.30634641",
+        "longitude": "-170.69501750",
+        "zoom": 11
+    },
+    {
+        "id": 198,
+        "enabled": true,
+        "code3l": "ABW",
+        "code2l": "AW",
+        "name": "Aruba",
+        "name_official": "Aruba of the Kingdom of the Netherlands",
+        "latitude": "12.52109661",
+        "longitude": "-69.96833800",
+        "zoom": 12
+    },
+    {
+        "id": 199,
+        "enabled": true,
+        "code3l": "ALA",
+        "code2l": "AX",
+        "name": "\u00c5land Islands",
+        "name_official": "\u00c5land Islands",
+        "latitude": "60.25403213",
+        "longitude": "20.35918350",
+        "zoom": 9
+    },
+    {
+        "id": 200,
+        "enabled": true,
+        "code3l": "BLM",
+        "code2l": "BL",
+        "name": "Saint Barth\u00e9lemy",
+        "name_official": "Territorial collectivity of Saint Barth\u00e9lemy",
+        "latitude": "17.90042417",
+        "longitude": "-62.83376215",
+        "zoom": 13
+    },
+    {
+        "id": 201,
+        "enabled": true,
+        "code3l": "BMU",
+        "code2l": "BM",
+        "name": "Bermuda",
+        "name_official": "Bermudas",
+        "latitude": "32.31995785",
+        "longitude": "-64.76182765",
+        "zoom": 12
+    },
+    {
+        "id": 202,
+        "enabled": true,
+        "code3l": "BES",
+        "code2l": "BQ",
+        "name": "Bonaire, Saint Eustatius And Saba",
+        "name_official": "Bonaire, Saint Eustatius and Saba",
+        "latitude": "12.17229702",
+        "longitude": "-68.28831170",
+        "zoom": 11
+    },
+    {
+        "id": 203,
+        "enabled": true,
+        "code3l": "BVT",
+        "code2l": "BV",
+        "name": "Bouvet Island",
+        "name_official": "Bouvet Island",
+        "latitude": "-54.42316906",
+        "longitude": "3.41319600",
+        "zoom": 12
+    },
+    {
+        "id": 204,
+        "enabled": true,
+        "code3l": "CCK",
+        "code2l": "CC",
+        "name": "Cocos (Keeling) Islands",
+        "name_official": "Territory of Cocos (Keeling) Islands",
+        "latitude": "-12.12890685",
+        "longitude": "96.84689104",
+        "zoom": 12
+    },
+    {
+        "id": 205,
+        "enabled": true,
+        "code3l": "CUW",
+        "code2l": "CW",
+        "name": "Cura\u00e7ao",
+        "name_official": "Cura\u00e7ao",
+        "latitude": "12.20710309",
+        "longitude": "-69.02160369",
+        "zoom": 11
+    },
+    {
+        "id": 206,
+        "enabled": true,
+        "code3l": "CXR",
+        "code2l": "CX",
+        "name": "Christmas Island",
+        "name_official": "Territory of Christmas Island",
+        "latitude": "-10.49170619",
+        "longitude": "105.68083796",
+        "zoom": 11
+    },
+    {
+        "id": 207,
+        "enabled": true,
+        "code3l": "ESH",
+        "code2l": "EH",
+        "name": "Western Sahara",
+        "name_official": "Western Sahara",
+        "latitude": "24.79324356",
+        "longitude": "-13.67683563",
+        "zoom": 6
+    },
+    {
+        "id": 208,
+        "enabled": true,
+        "code3l": "FLK",
+        "code2l": "FK",
+        "name": "Falkland Islands (Malvinas)",
+        "name_official": "Falkland Islands",
+        "latitude": "-51.78838251",
+        "longitude": "-59.52361100",
+        "zoom": 8
+    },
+    {
+        "id": 209,
+        "enabled": true,
+        "code3l": "FRO",
+        "code2l": "FO",
+        "name": "Faroe Islands (Associate Member)",
+        "name_official": "Faroe Islands",
+        "latitude": "61.88590482",
+        "longitude": "-6.91180400",
+        "zoom": 8
+    },
+    {
+        "id": 210,
+        "enabled": true,
+        "code3l": "GUF",
+        "code2l": "GF",
+        "name": "French Guiana",
+        "name_official": "French Guiana",
+        "latitude": "4.01114381",
+        "longitude": "-52.97746057",
+        "zoom": 7
+    },
+    {
+        "id": 211,
+        "enabled": true,
+        "code3l": "GGY",
+        "code2l": "GG",
+        "name": "Guernsey",
+        "name_official": "Bailiwick of Guernsey",
+        "latitude": "49.46565975",
+        "longitude": "-2.58527200",
+        "zoom": 12
+    },
+    {
+        "id": 212,
+        "enabled": true,
+        "code3l": "GIB",
+        "code2l": "GI",
+        "name": "Gibraltar",
+        "name_official": "Gibraltar",
+        "latitude": "36.14864641",
+        "longitude": "-5.34404779",
+        "zoom": 12
+    },
+    {
+        "id": 213,
+        "enabled": true,
+        "code3l": "GRL",
+        "code2l": "GL",
+        "name": "Greenland",
+        "name_official": "Greenland",
+        "latitude": "71.42932629",
+        "longitude": "-34.38651956",
+        "zoom": 3
+    },
+    {
+        "id": 214,
+        "enabled": true,
+        "code3l": "GLP",
+        "code2l": "GP",
+        "name": "Guadeloupe",
+        "name_official": "Department of Guadeloupe",
+        "latitude": "16.26472785",
+        "longitude": "-61.55099400",
+        "zoom": 10
+    },
+    {
+        "id": 215,
+        "enabled": true,
+        "code3l": "SGS",
+        "code2l": "GS",
+        "name": "South Georgia and the South Sandwich Islands",
+        "name_official": "South Georgia and the South Sandwich Islands",
+        "latitude": "-54.38130284",
+        "longitude": "-36.67305304",
+        "zoom": 9
+    },
+    {
+        "id": 216,
+        "enabled": true,
+        "code3l": "GUM",
+        "code2l": "GU",
+        "name": "Guam",
+        "name_official": "Territory of Guam",
+        "latitude": "13.44410137",
+        "longitude": "144.80747791",
+        "zoom": 10
+    },
+    {
+        "id": 217,
+        "enabled": true,
+        "code3l": "HKG",
+        "code2l": "HK",
+        "name": "Hong Kong",
+        "name_official": "Hong Kong Special Administrative Region of the People's Republic",
+        "latitude": "22.33728531",
+        "longitude": "114.14657786",
+        "zoom": 11
+    },
+    {
+        "id": 218,
+        "enabled": true,
+        "code3l": "HMD",
+        "code2l": "HM",
+        "name": "Heard Island And McDonald Islands",
+        "name_official": "Heard and McDonald Islands",
+        "latitude": "-53.08168847",
+        "longitude": "73.50415800",
+        "zoom": 11
+    },
+    {
+        "id": 219,
+        "enabled": true,
+        "code3l": "IMN",
+        "code2l": "IM",
+        "name": "Isle of Man",
+        "name_official": "The Isle of Man",
+        "latitude": "54.23562697",
+        "longitude": "-4.54805400",
+        "zoom": 10
+    },
+    {
+        "id": 220,
+        "enabled": true,
+        "code3l": "IOT",
+        "code2l": "IO",
+        "name": "British Indian Ocean Territory",
+        "name_official": "The British Indian Ocean Territory",
+        "latitude": "-7.33461519",
+        "longitude": "72.42425280",
+        "zoom": 12
+    },
+    {
+        "id": 221,
+        "enabled": true,
+        "code3l": "JEY",
+        "code2l": "JE",
+        "name": "Jersey",
+        "name_official": "Bailiwick of Jersey",
+        "latitude": "49.21440771",
+        "longitude": "-2.13124600",
+        "zoom": 12
+    },
+    {
+        "id": 222,
+        "enabled": true,
+        "code3l": "CYM",
+        "code2l": "KY",
+        "name": "Cayman Islands",
+        "name_official": "The Cayman Islands",
+        "latitude": "19.31322102",
+        "longitude": "-81.25459800",
+        "zoom": 11
+    },
+    {
+        "id": 223,
+        "enabled": true,
+        "code3l": "MAF",
+        "code2l": "MF",
+        "name": "Saint Martin",
+        "name_official": "Saint Martin",
+        "latitude": "18.07637107",
+        "longitude": "-63.05019106",
+        "zoom": 12
+    },
+    {
+        "id": 224,
+        "enabled": true,
+        "code3l": "MAC",
+        "code2l": "MO",
+        "name": "Macao",
+        "name_official": "Macau Special Administrative Region",
+        "latitude": "22.19872287",
+        "longitude": "113.54387700",
+        "zoom": 12
+    },
+    {
+        "id": 225,
+        "enabled": true,
+        "code3l": "MNP",
+        "code2l": "MP",
+        "name": "Northern Mariana Islands",
+        "name_official": "Commonwealth of the Northern Mariana Islands",
+        "latitude": "15.09783636",
+        "longitude": "145.67390000",
+        "zoom": 11
+    },
+    {
+        "id": 226,
+        "enabled": true,
+        "code3l": "MTQ",
+        "code2l": "MQ",
+        "name": "Martinique",
+        "name_official": "Department of Martinique",
+        "latitude": "14.64128045",
+        "longitude": "-61.02417600",
+        "zoom": 10
+    },
+    {
+        "id": 227,
+        "enabled": true,
+        "code3l": "MSR",
+        "code2l": "MS",
+        "name": "Montserrat",
+        "name_official": "Montserrat",
+        "latitude": "16.74774077",
+        "longitude": "-62.18736600",
+        "zoom": 12
+    },
+    {
+        "id": 228,
+        "enabled": true,
+        "code3l": "NCL",
+        "code2l": "NC",
+        "name": "New Caledonia",
+        "name_official": "Territory of New Caledonia and Dependencies",
+        "latitude": "-21.26104020",
+        "longitude": "165.58783760",
+        "zoom": 8
+    },
+    {
+        "id": 229,
+        "enabled": true,
+        "code3l": "NFK",
+        "code2l": "NF",
+        "name": "Norfolk Island",
+        "name_official": "Norfolk Islands",
+        "latitude": "-29.02801043",
+        "longitude": "167.94303023",
+        "zoom": 13
+    },
+    {
+        "id": 230,
+        "enabled": true,
+        "code3l": "PYF",
+        "code2l": "PF",
+        "name": "French Polynesia",
+        "name_official": "Territory of French Polynesia",
+        "latitude": "-17.66243898",
+        "longitude": "-149.40683900",
+        "zoom": 10
+    },
+    {
+        "id": 231,
+        "enabled": true,
+        "code3l": "SPM",
+        "code2l": "PM",
+        "name": "Saint Pierre and Miquelon",
+        "name_official": "Saint Pierre and Miquelon",
+        "latitude": "46.88469499",
+        "longitude": "-56.31590200",
+        "zoom": 10
+    },
+    {
+        "id": 232,
+        "enabled": true,
+        "code3l": "PCN",
+        "code2l": "PN",
+        "name": "Pitcairn Islands",
+        "name_official": "Pitcairn Group of Islands",
+        "latitude": "-24.37673925",
+        "longitude": "-128.32423730",
+        "zoom": 13
+    },
+    {
+        "id": 233,
+        "enabled": true,
+        "code3l": "PRI",
+        "code2l": "PR",
+        "name": "Puerto Rico",
+        "name_official": "Commonwealth of Puerto Rico",
+        "latitude": "18.21963053",
+        "longitude": "-66.59015100",
+        "zoom": 9
+    },
+    {
+        "id": 234,
+        "enabled": true,
+        "code3l": "PSE",
+        "code2l": "PS",
+        "name": "Palestinian Territory, Occupied",
+        "name_official": "Occupied Palestinian Territory",
+        "latitude": "32.26367103",
+        "longitude": "35.21936714",
+        "zoom": 8
+    },
+    {
+        "id": 235,
+        "enabled": true,
+        "code3l": "REU",
+        "code2l": "RE",
+        "name": "R\u00e9union",
+        "name_official": "Department of Reunion",
+        "latitude": "-21.11480084",
+        "longitude": "55.53638200",
+        "zoom": 10
+    },
+    {
+        "id": 236,
+        "enabled": true,
+        "code3l": "SHN",
+        "code2l": "SH",
+        "name": "Saint Helena, Ascension and Tristan da Cunha",
+        "name_official": "Saint Helena, Ascension and Tristan da Cunha",
+        "latitude": "-37.10521846",
+        "longitude": "-12.27768580",
+        "zoom": 12
+    },
+    {
+        "id": 237,
+        "enabled": true,
+        "code3l": "SJM",
+        "code2l": "SJ",
+        "name": "Svalbard and Jan Mayen",
+        "name_official": "Svalbard and Jan Mayen",
+        "latitude": "77.92215764",
+        "longitude": "18.99010622",
+        "zoom": 4
+    },
+    {
+        "id": 238,
+        "enabled": true,
+        "code3l": "SXM",
+        "code2l": "SX",
+        "name": "Sint Maarten",
+        "name_official": "Sint Maarten",
+        "latitude": "18.04433885",
+        "longitude": "-63.05616320",
+        "zoom": 12
+    },
+    {
+        "id": 239,
+        "enabled": true,
+        "code3l": "TCA",
+        "code2l": "TC",
+        "name": "Turks and Caicos Islands",
+        "name_official": "Turks and Caicos Islands",
+        "latitude": "21.72816866",
+        "longitude": "-71.79654471",
+        "zoom": 9
+    },
+    {
+        "id": 240,
+        "enabled": true,
+        "code3l": "ATF",
+        "code2l": "TF",
+        "name": "French Southern and Antarctic Lands",
+        "name_official": "Territory of the French Southern and Antarctic Lands",
+        "latitude": "-49.27235903",
+        "longitude": "69.34856300",
+        "zoom": 8
+    },
+    {
+        "id": 241,
+        "enabled": true,
+        "code3l": "TKL",
+        "code2l": "TK",
+        "name": "Tokelau (Associate Member)",
+        "name_official": "Tokelau",
+        "latitude": "-9.16682644",
+        "longitude": "-171.83981693",
+        "zoom": 10
+    },
+    {
+        "id": 242,
+        "enabled": true,
+        "code3l": "TWN",
+        "code2l": "TW",
+        "name": "Taiwan",
+        "name_official": "Republic of China",
+        "latitude": "23.71891402",
+        "longitude": "121.10884043",
+        "zoom": 7
+    },
+    {
+        "id": 243,
+        "enabled": true,
+        "code3l": "UMI",
+        "code2l": "UM",
+        "name": "United States Minor Outlying Islands",
+        "name_official": "United States Minor Outlying Islands",
+        "latitude": "19.46305694",
+        "longitude": "177.98631092",
+        "zoom": 5
+    },
+    {
+        "id": 244,
+        "enabled": true,
+        "code3l": "USA",
+        "code2l": "US",
+        "name": "United States of America",
+        "name_official": "United States of America",
+        "latitude": "37.66895362",
+        "longitude": "-102.39256450",
+        "zoom": 4
+    },
+    {
+        "id": 245,
+        "enabled": true,
+        "code3l": "VAT",
+        "code2l": "VA",
+        "name": "Holy See",
+        "name_official": "Holy see",
+        "latitude": "41.90377810",
+        "longitude": "12.45340142",
+        "zoom": 16
+    },
+    {
+        "id": 246,
+        "enabled": true,
+        "code3l": "VGB",
+        "code2l": "VG",
+        "name": "Virgin Islands",
+        "name_official": "British Virgin Islands",
+        "latitude": "17.67004187",
+        "longitude": "-64.77411010",
+        "zoom": 10
+    },
+    {
+        "id": 247,
+        "enabled": true,
+        "code3l": "VIR",
+        "code2l": "VI",
+        "name": "United States Virgin Islands",
+        "name_official": "Virgin Islands of the United States",
+        "latitude": "18.01000938",
+        "longitude": "-64.77411410",
+        "zoom": 9
+    },
+    {
+        "id": 248,
+        "enabled": true,
+        "code3l": "WLF",
+        "code2l": "WF",
+        "name": "Wallis and Futuna",
+        "name_official": "Territory of the Wallis and Futuna Islands",
+        "latitude": "-14.29378486",
+        "longitude": "-178.11649800",
+        "zoom": 12
+    },
+    {
+        "id": 249,
+        "enabled": true,
+        "code3l": "MYT",
+        "code2l": "YT",
+        "name": "Mayotte",
+        "name_official": "Overseas Department of Mayotte",
+        "latitude": "-12.82744522",
+        "longitude": "45.16624200",
+        "zoom": 11
+    },
+    {
+        "id": 250,
+        "enabled": true,
+        "code3l": "SSD",
+        "code2l": "SS",
+        "name": "South Sudan",
+        "name_official": "Republic of South Sudan",
+        "latitude": "7.91320803",
+        "longitude": "30.15342434",
         "zoom": 6
     }
 ]
